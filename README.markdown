@@ -1,6 +1,7 @@
 # Intro to React Native
 
 A slidedeck on React Native prepared for absolutely unfamiliarized people.
+Highly inspired by the talk by [Leland Richardson & Filipe Lima](https://speakerdeck.com/felipecsl/react-native-at-airbnb)
 
 Built using [Spectacle](https://github.com/FormidableLabs/spectacle), based off their boilerplate.
 

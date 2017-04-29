@@ -1,0 +1,128 @@
+
+Slide 1 - INTRO
+
+
+Slide 2 - WHY REACT NATIVE?
+  Why should you look into React Native? Why are major companies doing it?
+  (Airbnb, Bloomberg, Instagram, Microsoft, Tesla, Uber)
+
+
+Slide 2 - The big 3
+  Most companies are building their apps 3 times: Android, iOS, Web. These are 3
+different languages, platforms requiring different engineers, teams, deployment
+strategies, etc..
+
+  Resulting not only in more effort, a lot of feature disparity across platforms,
+and obviously a much higher cost.
+
+
+
+Slide 3 - Advantage of RN
+  By using JavaScript we are able to share a large codebase amongst Android and iOS and to
+some extent also with web, thus reducing the effort of building 3 completely independent
+projects, consequently feature disparity. All of which leads to less resources.
+
+React native allows you to describe the UI using javascript and it bridges to the
+native UI platform and give you a native UI.
+
+
+Slide 4 - User experience vs Native experience vs React Native
+  WHY IS REACT NATIVE BETTER THEN the alternatives?
+
+  Native -
+      DevXP: Build times, compile times, developer tools, ease of deployment
+        -> bad in comparison with web
+      UserXP: Fast, nice 60 FPS, smooth animations, etc
+
+  Web (cordova, phonegap, ionic..)-
+      DevXP: fast development, ease of debugging, good tooling
+      UserXP: Clunky, bad touch and gesture responsiveness, bad performance
+
+  React Native -
+      DevXP: similar to web, including live reload
+      UserXP: Similar to Native, performant, fast 60fps, etc
+
+Slide 5 - say what!?!?
+
+Slide 6  - Live Reload
+    Very fast feedback loop.. less then 3 second. Fundamentally changes development speed.
+    Now you are able to actually make mistakes and not waste the entire build time.
+    Or try new values, new things just that fast.
+
+    But, thats not all you get.
+
+
+
+Slide 7 - Code push
+    So code push is a service by Microsoft that allow apps built with React Native
+    to have OTA updates. So developers can now push updates directly to the user
+    without going through the Stores process. (Apple might be a pain in the back).
+
+    Experimentation: Try changes, and cleanup if they don't seem to work.
+    C.D.:  Still not there, but there are plans to get it such as in the web.
+
+Slide 8 - OBAMA
+
+================= WHY NOT REACT NATIVE? ==============
+
+Slide 9 - WHY NOT REACT NATIVE?
+  Why should you look into React Native? Why are major companies doing it?
+  (Airbnb, Bloomberg, Instagram, Microsoft, Tesla, Uber)
+
+
+Slide 10 - Type Safety
+    Not everything is good. So native languages are types, JS is not, there is no compiler.
+    You can work around with having good unit tests and a lot of
+    coverage. You should be doing this for native too, but maybe you're trusting
+    your compiler to give you the errors.
+
+    Furthermore you can use typescript, a typed subset of JS, or Flow to address
+    this issue.
+
+
+Slide 11 - Performance
+    First of all, its not web based like phone-gap or cordova. But of course
+    is not as good as native. There are 2 main threads, the UI and the logic.
+    Your JS code goes on the logic thread and its interpreted on the native
+    JS kit (JScore). Which then gets fed to the main thread through the React
+    Native bridge. Is this confusing?
+
+Slide 12 - confusing meme
+
+Slide 13 - FAQ
+    SO, this is stuff that usually gets asked online.
+
+    1 Does JS compiles to Native? - NO. JS is ran on a runtime. When you build
+      a RN app you actually bundle JScore, and while running, it communicates with
+      the app
+
+    2 Does JS runs win a web view? - NO. It runs in the javascript VM. Which is
+      much better since there is no overhead of a browser, its just the bare
+      minimum to ran the code.
+
+    3 native API, do I have to wait for the RN team? - NO. You don't have to
+      wait. One of the biggest upsides in RN is that you can dive directly into
+      native code and build you own native modules, that you can expose
+      directly through the react native bridge and access on your JS code.
+
+
+  Another question that some of you might be asking is: ok, how do I build my app?
+
+Slide 14 - REACT
+    So, React is a library to render UIs. And with React your UI is basically
+      a pure function of state. What that means is that on each different state
+      React renders the corresponding UI. It actually computes the diff
+      on each of them to efficiently render the UI.
+
+Slide 15 - REACT HELLO World
+  This is how the hello world example would be on React.
+  Although it looks like html, its not, its JSX, a subset of javascript
+
+Slide 16 - REACT NATIVE HELLO World
+  This is how the hello world example would be on React. Only the description
+  of the UI changes to  use specific components from React Native.
+
+  What about styling? Well, styling is done with StyleSheet, and API from
+  react-native that is like a subset of CSS. It comprises almost everything
+  apart from animation which are done using a different api. It relies mostly
+  on the flexbox, which is a web Standard
