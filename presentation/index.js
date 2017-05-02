@@ -77,7 +77,7 @@ export default class Presentation extends React.Component {
 						React Native
 					</Heading>
 					<Text margin="10px 0 0" textColor="tertiary" size={1} fit bold>
-						building cross platform native apps without (almost) no native code
+						building cross platform native apps with (almost) no native code
 					</Text>
 					<Text
 						margin="100px 0 0"
